@@ -311,6 +311,12 @@ section {
   overflow: hidden;
 }
 
+.section-title h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: black;
+}
+
 .section-bg {
   background: #f5f8fd;
 }
@@ -349,6 +355,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
+  margin-bottom: 20px;
   color: #173b6c;
 }
 
@@ -713,16 +720,61 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: white;
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #149ddd;
+}
+
+.services .icon img {
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  width: 54px;
+  height: 54px;
+}
+
+.icon img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.9s ease;
+}
+
+.icon .hover-image {
+  opacity: 0;
+}
+
+.services .icon-box:hover .icon .hover-image {
+  opacity: 1;
+}
+
+.services .icon-box:hover .icon .normal-image {
+  opacity: 0;
 }
 
 .services .icon i {
   color: #fff;
   font-size: 24px;
   line-height: 0;
+}
+
+.services .icon-onair {
+  background: #fff;
+  border: 10px solid red;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  transition: background-color 0.8s, border-color 0.8s;
+}
+
+.services .icon-box:hover .icon-onair {
+  background: red !important;
+  border-color: white;
 }
 
 .services .icon-box:hover .icon {
