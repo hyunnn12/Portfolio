@@ -1194,9 +1194,169 @@ section {
 /* ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------ */
-/* 디테일 포트폴리오 */
+/* 포트폴리오 구현사항 */
+.image-description {
+  background: #f7f7f7;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-description h3 {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #173b6c;
+  margin-bottom: 10px;
+}
+
+.image-description p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Git 링크를 오른쪽으로 정렬 */
+.portfolio-info .git-link {
+  text-align: right;
+}
+/* ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------ */
+/* 포트폴리오 담당역할 */
+/* 아이콘 스타일링 */
+.role-icon {
+  font-size: 30px; /* 아이콘 크기 */
+  margin-right: 10px; /* 오른쪽 여백 */
+  color: #149ddd; /* 아이콘 색상 */
+}
+
+/* 박스 스타일링 */
+.role-content .role-box {
+  background: white;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.role-content .role-outbox {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.role-content .role-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.role-content h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #173b6c;
+}
+
+.role-content ul {
+  padding: 0;
+  margin-left: 20px;
+}
+
+.role-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.role-content ul li strong {
+  color: #149ddd; /* 또는 프로젝트 테마에 맞는 색상 */
+}
+
+/* ------------------------------------------------------------ */
+/* 포트폴리오 성과 및 리뷰 */
+.achievement-review .achievement,
+.achievement-review .review {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-review h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #173b6c;
+  display: flex;
+  align-items: center;
+}
+
+.achievement-review h3 i {
+  margin-right: 10px;
+  color: #149ddd;
+}
+
+.achievement-review ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievement-review ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.achievement-review ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 6px;
+  background-color: #149ddd;
+  border-radius: 50%;
+}
+
+.achievement-review .achievement:hover,
+.achievement-review .review:hover {
+  transform: translateY(-5px);
+}
+
+.award-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.award-preview {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.award-hover:hover .award-preview {
+  display: block;
+}
+
+.award-preview img {
+  max-width: 200px; /* 또는 적절한 크기로 조절 */
+  height: auto;
+}
 
 /*--------------------------------------------------------------
 # Footer
